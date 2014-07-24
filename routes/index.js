@@ -10,7 +10,7 @@ router.get('/', function(req, res) {
 
 router.post('/', function(req, res){
   story.push(req.body.scene);
-  res.send(story);
+  res.render('index',{title: 'woot', story: story});
 });
 
 module.exports = router;

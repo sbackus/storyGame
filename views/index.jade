@@ -2,7 +2,8 @@ extends layout
 
 block content
   h1 Once upon a time...
-  p there was an #{title}
+  - each scene in story
+    p= scene
 
 
   block form
