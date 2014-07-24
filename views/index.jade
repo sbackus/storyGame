@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 Once upon a time...
+  p there was an #{title}
+
+
+  block form
+    h3 Add a scene to the story:
+    form(name="addSceneFrom", action="/scene", method="post")
+      input(type="text", name="scene")
+      input(type="submit", value="post")
